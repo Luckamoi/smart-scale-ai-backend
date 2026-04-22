@@ -24,14 +24,14 @@ User steps on the scale → n8n compares weight to stored profile → if approve
 [Mosquitto Broker]
       ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                        n8n Workflows                         │
+│                        n8n Workflows                        │
 │                                                             │
-│  🏥 Health Workflow          🔐 Security Workflow           │
+│  🏥 Health Workflow          🔐 Security Workflow          │
 │  ─────────────────           ──────────────────────         │
-│  1. Receive weight        1. Receive weight                  │
-│  2. Receive food photo    2. Fetch reference (Google Sheets) │
-│  3. Send to Cloud AI      3. Compare weight (± tolerance)    │
-│  4. Get nutrition data    4. ❌ No match → Deny + Alert      │
+│  1. Receive weight        1. Receive weight                 │
+│  2. Receive food photo    2. Fetch reference (Google Sheets)│
+│  3. Send to Cloud AI      3. Compare weight (± tolerance)   │
+│  4. Get nutrition data    4. ❌ No match → Deny + Alert     │
 │  5. Generate health tips  5. ✅ Match → Generate OTP        │
 │  6. Save to Google Sheets 6. Send OTP via Gmail             │
 │                           7. Wait for OTP input             │
